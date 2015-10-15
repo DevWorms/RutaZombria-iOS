@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B5675471BD058B600FF0B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675461BD058B600FF0B6F /* AppDelegate.swift */; };
+		3B5675491BD058B600FF0B6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675481BD058B600FF0B6F /* ViewController.swift */; };
+		3B56754C1BD058B700FF0B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754A1BD058B700FF0B6F /* Main.storyboard */; };
+		3B56754E1BD058B700FF0B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754D1BD058B700FF0B6F /* Assets.xcassets */; };
+		3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */; };
+		3B56755C1BD058B800FF0B6F /* RutaZombriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56755B1BD058B800FF0B6F /* RutaZombriaTests.swift */; };
+		3B5675671BD058B800FF0B6F /* RutaZombriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B5675581BD058B800FF0B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B56753B1BD058B500FF0B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5675421BD058B500FF0B6F;
+			remoteInfo = RutaZombria;
+		};
+		3B5675631BD058B800FF0B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B56753B1BD058B500FF0B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5675421BD058B500FF0B6F;
+			remoteInfo = RutaZombria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B5675431BD058B600FF0B6F /* RutaZombria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutaZombria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5675461BD058B600FF0B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B5675481BD058B600FF0B6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B56754B1BD058B700FF0B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B56754D1BD058B700FF0B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B5675501BD058B700FF0B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B5675521BD058B700FF0B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5675571BD058B800FF0B6F /* RutaZombriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutaZombriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B56755B1BD058B800FF0B6F /* RutaZombriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaZombriaTests.swift; sourceTree = "<group>"; };
+		3B56755D1BD058B800FF0B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5675621BD058B800FF0B6F /* RutaZombriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutaZombriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaZombriaUITests.swift; sourceTree = "<group>"; };
+		3B5675681BD058B800FF0B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B5675401BD058B500FF0B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5675541BD058B800FF0B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B56755F1BD058B800FF0B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B56753A1BD058B400FF0B6F = {
+			isa = PBXGroup;
+			children = (
+				3B5675451BD058B600FF0B6F /* RutaZombria */,
+				3B56755A1BD058B800FF0B6F /* RutaZombriaTests */,
+				3B5675651BD058B800FF0B6F /* RutaZombriaUITests */,
+				3B5675441BD058B600FF0B6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B5675441BD058B600FF0B6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5675431BD058B600FF0B6F /* RutaZombria.app */,
+				3B5675571BD058B800FF0B6F /* RutaZombriaTests.xctest */,
+				3B5675621BD058B800FF0B6F /* RutaZombriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B5675451BD058B600FF0B6F /* RutaZombria */ = {
+			isa = PBXGroup;
+			children = (
+				3B5675461BD058B600FF0B6F /* AppDelegate.swift */,
+				3B5675481BD058B600FF0B6F /* ViewController.swift */,
+				3B56754A1BD058B700FF0B6F /* Main.storyboard */,
+				3B56754D1BD058B700FF0B6F /* Assets.xcassets */,
+				3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */,
+				3B5675521BD058B700FF0B6F /* Info.plist */,
+			);
+			path = RutaZombria;
+			sourceTree = "<group>";
+		};
+		3B56755A1BD058B800FF0B6F /* RutaZombriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B56755B1BD058B800FF0B6F /* RutaZombriaTests.swift */,
+				3B56755D1BD058B800FF0B6F /* Info.plist */,
+			);
+			path = RutaZombriaTests;
+			sourceTree = "<group>";
+		};
+		3B5675651BD058B800FF0B6F /* RutaZombriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */,
+				3B5675681BD058B800FF0B6F /* Info.plist */,
+			);
+			path = RutaZombriaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B5675421BD058B500FF0B6F /* RutaZombria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B56756B1BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombria" */;
+			buildPhases = (
+				3B56753F1BD058B500FF0B6F /* Sources */,
+				3B5675401BD058B500FF0B6F /* Frameworks */,
+				3B5675411BD058B500FF0B6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RutaZombria;
+			productName = RutaZombria;
+			productReference = 3B5675431BD058B600FF0B6F /* RutaZombria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B5675561BD058B800FF0B6F /* RutaZombriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B56756E1BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaTests" */;
+			buildPhases = (
+				3B5675531BD058B800FF0B6F /* Sources */,
+				3B5675541BD058B800FF0B6F /* Frameworks */,
+				3B5675551BD058B800FF0B6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5675591BD058B800FF0B6F /* PBXTargetDependency */,
+			);
+			name = RutaZombriaTests;
+			productName = RutaZombriaTests;
+			productReference = 3B5675571BD058B800FF0B6F /* RutaZombriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B5675611BD058B800FF0B6F /* RutaZombriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5675711BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaUITests" */;
+			buildPhases = (
+				3B56755E1BD058B800FF0B6F /* Sources */,
+				3B56755F1BD058B800FF0B6F /* Frameworks */,
+				3B5675601BD058B800FF0B6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5675641BD058B800FF0B6F /* PBXTargetDependency */,
+			);
+			name = RutaZombriaUITests;
+			productName = RutaZombriaUITests;
+			productReference = 3B5675621BD058B800FF0B6F /* RutaZombriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B56753B1BD058B500FF0B6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = DevWorms;
+				TargetAttributes = {
+					3B5675421BD058B500FF0B6F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					3B5675561BD058B800FF0B6F = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 3B5675421BD058B500FF0B6F;
+					};
+					3B5675611BD058B800FF0B6F = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 3B5675421BD058B500FF0B6F;
+					};
+				};
+			};
+			buildConfigurationList = 3B56753E1BD058B500FF0B6F /* Build configuration list for PBXProject "RutaZombria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B56753A1BD058B400FF0B6F;
+			productRefGroup = 3B5675441BD058B600FF0B6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B5675421BD058B500FF0B6F /* RutaZombria */,
+				3B5675561BD058B800FF0B6F /* RutaZombriaTests */,
+				3B5675611BD058B800FF0B6F /* RutaZombriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B5675411BD058B500FF0B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */,
+				3B56754E1BD058B700FF0B6F /* Assets.xcassets in Resources */,
+				3B56754C1BD058B700FF0B6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5675551BD058B800FF0B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5675601BD058B800FF0B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B56753F1BD058B500FF0B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5675491BD058B600FF0B6F /* ViewController.swift in Sources */,
+				3B5675471BD058B600FF0B6F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5675531BD058B800FF0B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B56755C1BD058B800FF0B6F /* RutaZombriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B56755E1BD058B800FF0B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5675671BD058B800FF0B6F /* RutaZombriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B5675591BD058B800FF0B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5675421BD058B500FF0B6F /* RutaZombria */;
+			targetProxy = 3B5675581BD058B800FF0B6F /* PBXContainerItemProxy */;
+		};
+		3B5675641BD058B800FF0B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5675421BD058B500FF0B6F /* RutaZombria */;
+			targetProxy = 3B5675631BD058B800FF0B6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B56754A1BD058B700FF0B6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B56754B1BD058B700FF0B6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5675501BD058B700FF0B6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B5675691BD058B800FF0B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B56756A1BD058B800FF0B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B56756C1BD058B800FF0B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RutaZombria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B56756D1BD058B800FF0B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RutaZombria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B56756F1BD058B800FF0B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RutaZombriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutaZombria.app/RutaZombria";
+			};
+			name = Debug;
+		};
+		3B5675701BD058B800FF0B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RutaZombriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutaZombria.app/RutaZombria";
+			};
+			name = Release;
+		};
+		3B5675721BD058B800FF0B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RutaZombriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RutaZombria;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3B5675731BD058B800FF0B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RutaZombriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devworms.RutaZombriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RutaZombria;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B56753E1BD058B500FF0B6F /* Build configuration list for PBXProject "RutaZombria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5675691BD058B800FF0B6F /* Debug */,
+				3B56756A1BD058B800FF0B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B56756B1BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B56756C1BD058B800FF0B6F /* Debug */,
+				3B56756D1BD058B800FF0B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B56756E1BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B56756F1BD058B800FF0B6F /* Debug */,
+				3B5675701BD058B800FF0B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B5675711BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5675721BD058B800FF0B6F /* Debug */,
+				3B5675731BD058B800FF0B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B56753B1BD058B500FF0B6F /* Project object */;
+}
