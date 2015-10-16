@@ -14,6 +14,16 @@
 		3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */; };
 		3B56755C1BD058B800FF0B6F /* RutaZombriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56755B1BD058B800FF0B6F /* RutaZombriaTests.swift */; };
 		3B5675671BD058B800FF0B6F /* RutaZombriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */; };
+		3BFB98CE1BD06C75004D573F /* corazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C41BD06C75004D573F /* corazon.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98CF1BD06C75004D573F /* personaje01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C51BD06C75004D573F /* personaje01.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D01BD06C75004D573F /* personaje02.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C61BD06C75004D573F /* personaje02.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D11BD06C75004D573F /* personaje03.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C71BD06C75004D573F /* personaje03.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D21BD06C75004D573F /* personaje04.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C81BD06C75004D573F /* personaje04.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D31BD06C75004D573F /* personaje05.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98C91BD06C75004D573F /* personaje05.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D41BD06C75004D573F /* personaje07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98CA1BD06C75004D573F /* personaje07.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D51BD06C75004D573F /* personaje08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98CB1BD06C75004D573F /* personaje08.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D61BD06C75004D573F /* personaje09.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98CC1BD06C75004D573F /* personaje09.png */; settings = {ASSET_TAGS = (); }; };
+		3BFB98D71BD06C75004D573F /* zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB98CD1BD06C75004D573F /* zombie.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		3B5675621BD058B800FF0B6F /* RutaZombriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutaZombriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaZombriaUITests.swift; sourceTree = "<group>"; };
 		3B5675681BD058B800FF0B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFB98C41BD06C75004D573F /* corazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corazon.png; sourceTree = "<group>"; };
+		3BFB98C51BD06C75004D573F /* personaje01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje01.png; sourceTree = "<group>"; };
+		3BFB98C61BD06C75004D573F /* personaje02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje02.png; sourceTree = "<group>"; };
+		3BFB98C71BD06C75004D573F /* personaje03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje03.png; sourceTree = "<group>"; };
+		3BFB98C81BD06C75004D573F /* personaje04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje04.png; sourceTree = "<group>"; };
+		3BFB98C91BD06C75004D573F /* personaje05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje05.png; sourceTree = "<group>"; };
+		3BFB98CA1BD06C75004D573F /* personaje07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje07.png; sourceTree = "<group>"; };
+		3BFB98CB1BD06C75004D573F /* personaje08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje08.png; sourceTree = "<group>"; };
+		3BFB98CC1BD06C75004D573F /* personaje09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje09.png; sourceTree = "<group>"; };
+		3BFB98CD1BD06C75004D573F /* zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,7 @@
 		3B5675451BD058B600FF0B6F /* RutaZombria */ = {
 			isa = PBXGroup;
 			children = (
+				3BFB98C31BD06AEB004D573F /* images */,
 				3B5675461BD058B600FF0B6F /* AppDelegate.swift */,
 				3B5675481BD058B600FF0B6F /* ViewController.swift */,
 				3B56754A1BD058B700FF0B6F /* Main.storyboard */,
@@ -123,6 +144,23 @@
 				3B5675681BD058B800FF0B6F /* Info.plist */,
 			);
 			path = RutaZombriaUITests;
+			sourceTree = "<group>";
+		};
+		3BFB98C31BD06AEB004D573F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB98C41BD06C75004D573F /* corazon.png */,
+				3BFB98C51BD06C75004D573F /* personaje01.png */,
+				3BFB98C61BD06C75004D573F /* personaje02.png */,
+				3BFB98C71BD06C75004D573F /* personaje03.png */,
+				3BFB98C81BD06C75004D573F /* personaje04.png */,
+				3BFB98C91BD06C75004D573F /* personaje05.png */,
+				3BFB98CA1BD06C75004D573F /* personaje07.png */,
+				3BFB98CB1BD06C75004D573F /* personaje08.png */,
+				3BFB98CC1BD06C75004D573F /* personaje09.png */,
+				3BFB98CD1BD06C75004D573F /* zombie.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +267,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */,
+				3BFB98D01BD06C75004D573F /* personaje02.png in Resources */,
 				3B56754E1BD058B700FF0B6F /* Assets.xcassets in Resources */,
+				3BFB98D11BD06C75004D573F /* personaje03.png in Resources */,
+				3BFB98CF1BD06C75004D573F /* personaje01.png in Resources */,
+				3BFB98D21BD06C75004D573F /* personaje04.png in Resources */,
+				3BFB98D41BD06C75004D573F /* personaje07.png in Resources */,
+				3BFB98CE1BD06C75004D573F /* corazon.png in Resources */,
+				3BFB98D31BD06C75004D573F /* personaje05.png in Resources */,
+				3BFB98D71BD06C75004D573F /* zombie.png in Resources */,
 				3B56754C1BD058B700FF0B6F /* Main.storyboard in Resources */,
+				3BFB98D61BD06C75004D573F /* personaje09.png in Resources */,
+				3BFB98D51BD06C75004D573F /* personaje08.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +529,7 @@
 				3B56756D1BD058B800FF0B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B56756E1BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +538,7 @@
 				3B5675701BD058B800FF0B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B5675711BD058B800FF0B6F /* Build configuration list for PBXNativeTarget "RutaZombriaUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +547,7 @@
 				3B5675731BD058B800FF0B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
