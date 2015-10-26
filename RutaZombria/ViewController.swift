@@ -17,6 +17,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     let locationManager = CLLocationManager()
     var span = MKCoordinateSpanMake(0.02, 0.02)
     var pinView: MKAnnotationView!
+    var startChangingImage: Bool!
+    var coord1: CLLocation!
+    var imagesPersonaje = ["personaje01","personaje02","personaje03","personaje04"]
+    var numOfImage = 0
+    var ladoRecorrerArray: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         //locationManager.requestAlwaysAuthorization() //requestWhenInUseAuthorization() NSLocationWhenInUseUsageDescription in .plist
         locationManager.startUpdatingLocation()
+        
+        startChangingImage = false
+        coord1 = CLLocation(latitude: 0.0, longitude: 0.0)
+        self.ladoRecorrerArray = false
         
         Map.delegate = self
         
@@ -57,13 +66,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let reuseId = "zombie"
+        let reuseId = "personaje"
         
         pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as MKAnnotationView!
         
         if pinView == nil {
             pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView.image = UIImage(named:"zombie")
+            pinView.image = UIImage(named:"personaje04")
             pinView.canShowCallout = true
            
         }
@@ -72,6 +81,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
         
         //Map.addAnnotation(pinView.annotation!)
+        print("holajaja")
+        startChangingImage = true
         
         return pinView
         
@@ -83,7 +94,45 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        /*
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+        [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
         
+        // Add an annotation
+        MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+        point.coordinate = userLocation.coordinate;
+        point.title = @"Where am I?";
+        point.subtitle = @"I'm here!!!";
+        
+        [self.mapView addAnnotation:point];
+        
+        */
+        
+        let coord = userLocation.location
+        
+        if self.startChangingImage == true {
+            if coord!.distanceFromLocation(coord1) > 0.01 {
+                print ("hola 0,01: \(numOfImage)")
+                
+                self.pinView.image = UIImage(named: imagesPersonaje[numOfImage])
+                self.coord1 = coord
+                
+                //recorrer de izq a der, y de der a izq spriteSheet
+                if (self.numOfImage < 3) && (self.ladoRecorrerArray == false) {
+                    self.numOfImage++
+                    
+                    if self.numOfImage == 3 {
+                        self.ladoRecorrerArray = true
+                    }
+                }else{
+                    self.numOfImage--
+                    
+                    if self.numOfImage == 0 {
+                        self.ladoRecorrerArray = false
+                    }
+                }
+            }
+        }
         
     }
 

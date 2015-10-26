@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B02CFA71BDDCC0B0042D856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B02CFA61BDDCC0B0042D856 /* Assets.xcassets */; };
 		3B5675471BD058B600FF0B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675461BD058B600FF0B6F /* AppDelegate.swift */; };
 		3B5675491BD058B600FF0B6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675481BD058B600FF0B6F /* ViewController.swift */; };
 		3B56754C1BD058B700FF0B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754A1BD058B700FF0B6F /* Main.storyboard */; };
-		3B56754E1BD058B700FF0B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754D1BD058B700FF0B6F /* Assets.xcassets */; };
 		3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */; };
 		3B56755C1BD058B800FF0B6F /* RutaZombriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56755B1BD058B800FF0B6F /* RutaZombriaTests.swift */; };
 		3B5675671BD058B800FF0B6F /* RutaZombriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5675661BD058B800FF0B6F /* RutaZombriaUITests.swift */; };
@@ -34,11 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B02CFA61BDDCC0B0042D856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5675431BD058B600FF0B6F /* RutaZombria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutaZombria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5675461BD058B600FF0B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5675481BD058B600FF0B6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B56754B1BD058B700FF0B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B56754D1BD058B700FF0B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5675501BD058B700FF0B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5675521BD058B700FF0B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5675571BD058B800FF0B6F /* RutaZombriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutaZombriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,9 +100,9 @@
 				3B5675461BD058B600FF0B6F /* AppDelegate.swift */,
 				3B5675481BD058B600FF0B6F /* ViewController.swift */,
 				3B56754A1BD058B700FF0B6F /* Main.storyboard */,
-				3B56754D1BD058B700FF0B6F /* Assets.xcassets */,
 				3B56754F1BD058B700FF0B6F /* LaunchScreen.storyboard */,
 				3B5675521BD058B700FF0B6F /* Info.plist */,
+				3B02CFA61BDDCC0B0042D856 /* Assets.xcassets */,
 			);
 			path = RutaZombria;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5675511BD058B700FF0B6F /* LaunchScreen.storyboard in Resources */,
-				3B56754E1BD058B700FF0B6F /* Assets.xcassets in Resources */,
+				3B02CFA71BDDCC0B0042D856 /* Assets.xcassets in Resources */,
 				3B56754C1BD058B700FF0B6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
