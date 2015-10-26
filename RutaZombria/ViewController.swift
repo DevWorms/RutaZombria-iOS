@@ -54,6 +54,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = touchMapCoordinate
+        annotation.title = "vida"
         
         self.Map.addAnnotation(annotation)
     }
@@ -74,25 +75,46 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let reuseId = "personaje"
+        var pin: MKAnnotationView!
         
-        pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as MKAnnotationView!
+        if annotation.title! == "vida" {
+            let reuseId = "vida"
+            
+            pin = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as MKAnnotationView!
+            
+            if pin == nil {
+                pin = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                pin.image = UIImage(named:"corazon")
+                pin.canShowCallout = true
+                
+            }
+            else {
+                pin.annotation = annotation
+            }
+            
+        } else {
+            let reuseId = "personaje"
+            
+            self.pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as MKAnnotationView!
+            
+            if self.pinView == nil {
+                self.pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                self.pinView.image = UIImage(named:"personaje04")
+                self.pinView.canShowCallout = true
+                
+            }
+            else {
+                self.pinView.annotation = annotation
+            }
+            
+            //Map.addAnnotation(self.pinView.annotation!)
+            
+            pin = self.pinView
+            startChangingImage = true
         
-        if pinView == nil {
-            pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView.image = UIImage(named:"personaje04")
-            pinView.canShowCallout = true
-           
         }
-        else {
-            pinView.annotation = annotation
-        }
         
-        //Map.addAnnotation(pinView.annotation!)
-        
-        startChangingImage = true
-        
-        return pinView
+        return pin
         
     }
     
