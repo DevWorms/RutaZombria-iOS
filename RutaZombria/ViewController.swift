@@ -13,7 +13,6 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var Map: MKMapView!
-    //var annotation = MKPointAnnotation()
     let locationManager = CLLocationManager()
     var span = MKCoordinateSpanMake(0.02, 0.02)
     var pinView: MKAnnotationView!
@@ -36,27 +35,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         coord1 = CLLocation(latitude: 0.0, longitude: 0.0)
         self.ladoRecorrerArray = false
         
-        Map.delegate = self
+        self.Map.delegate = self
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongPress:")
+        longPressGesture.minimumPressDuration = 2.0
+        self.Map.addGestureRecognizer(longPressGesture)
         
     }
     
+    func handleLongPress(getstureRecognizer : UIGestureRecognizer){
+        
+        print("handleLongPress:")
+        
+        if getstureRecognizer.state != .Began { return }
+        
+        let touchPoint = getstureRecognizer.locationInView(self.Map)
+        let touchMapCoordinate = self.Map.convertPoint(touchPoint, toCoordinateFromView: self.Map)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = touchMapCoordinate
+        
+        self.Map.addAnnotation(annotation)
+    }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Current location lon: \(locations.last?.coordinate.longitude)")
-        print("Current location lat: \(locations.last?.coordinate.latitude)")
+        print("Current location: \(locations.last?.coordinate)")
         
         locationManager.stopUpdatingLocation()
         
         let region = MKCoordinateRegion(center: (locations.last?.coordinate)!, span: span)
-        
         Map.setRegion(region, animated: true)
-        
-        /*annotation.coordinate = CLLocationCoordinate2DMake(
-                                        (locations.last?.coordinate.latitude)!,
-                                        (locations.last?.coordinate.longitude)!   )
-        annotation.title = "Me"
-        annotation.subtitle = "vale me"
-        
-        Map.addAnnotation(annotation)*/
         
     }
     
@@ -81,7 +89,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
         
         //Map.addAnnotation(pinView.annotation!)
-        print("holajaja")
+        
         startChangingImage = true
         
         return pinView
@@ -94,19 +102,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
-        /*
-        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-        [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
-        
-        // Add an annotation
-        MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-        point.coordinate = userLocation.coordinate;
-        point.title = @"Where am I?";
-        point.subtitle = @"I'm here!!!";
-        
-        [self.mapView addAnnotation:point];
-        
-        */
         
         let coord = userLocation.location
         
